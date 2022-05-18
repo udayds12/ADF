@@ -5,6 +5,9 @@
 			"referenceName": "Sqlserver",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "Task1"
+		},
 		"annotations": [],
 		"type": "AzureSqlTable",
 		"schema": [],
