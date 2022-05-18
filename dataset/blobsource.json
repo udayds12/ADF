@@ -1,0 +1,35 @@
+{
+	"name": "blobsource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "BlobContainer",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "Task1"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Emp.txt",
+				"container": "tbsource"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "empid",
+				"type": "String"
+			},
+			{
+				"name": "ename",
+				"type": "String"
+			}
+		]
+	}
+}
