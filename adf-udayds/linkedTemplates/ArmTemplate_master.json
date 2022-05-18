@@ -7,6 +7,14 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "adf-udayds"
 		},
+		"Blobsource_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'Blobsource'"
+		},
+		"SqlDestination_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'SqlDestination'"
+		},
 		"BlobContainer_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'BlobContainer'"
@@ -41,6 +49,12 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"Blobsource_connectionString": {
+						"value": "[parameters('Blobsource_connectionString')]"
+					},
+					"SqlDestination_connectionString": {
+						"value": "[parameters('SqlDestination_connectionString')]"
 					},
 					"BlobContainer_connectionString": {
 						"value": "[parameters('BlobContainer_connectionString')]"

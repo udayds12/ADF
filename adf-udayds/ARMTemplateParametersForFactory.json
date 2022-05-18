@@ -5,6 +5,12 @@
 		"factoryName": {
 			"value": "adf-udayds"
 		},
+		"Blobsource_connectionString": {
+			"value": ""
+		},
+		"SqlDestination_connectionString": {
+			"value": ""
+		},
 		"BlobContainer_connectionString": {
 			"value": ""
 		},
