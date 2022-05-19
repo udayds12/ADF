@@ -1,0 +1,22 @@
+{
+	"name": "Blob_emp_files",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "BlobContainer",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "tbsource"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
