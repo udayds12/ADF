@@ -1,0 +1,7 @@
+{
+	"name": "privatesqldb",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/46e305e9-f87c-48d8-a249-cb5178606296/resourceGroups/Resorce_udayds/providers/Microsoft.Sql/servers/sqlserver-uday",
+		"groupId": "sqlServer"
+	}
+}
