@@ -91,13 +91,19 @@
 							},
 							"inputs": [
 								{
-									"referenceName": "Blob_emp_files",
-									"type": "DatasetReference"
+									"referenceName": "input",
+									"type": "DatasetReference",
+									"parameters": {
+										"filename": {
+											"value": "@item().name",
+											"type": "Expression"
+										}
+									}
 								}
 							],
 							"outputs": [
 								{
-									"referenceName": "sqltable",
+									"referenceName": "output_tables",
 									"type": "DatasetReference"
 								}
 							]

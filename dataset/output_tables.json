@@ -1,0 +1,23 @@
+{
+	"name": "output_tables",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Sqlserver",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"tablename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"table": {
+				"value": "@dataset().tablename",
+				"type": "Expression"
+			}
+		}
+	}
+}
