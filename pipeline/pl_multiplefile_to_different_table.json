@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"dataset": {
-						"referenceName": "Blob_emp_files",
+						"referenceName": "input",
 						"type": "DatasetReference"
 					},
 					"fieldList": [
