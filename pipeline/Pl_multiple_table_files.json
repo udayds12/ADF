@@ -32,7 +32,7 @@
 				}
 			},
 			{
-				"name": "ForEachloop",
+				"name": "ForEach1",
 				"type": "ForEach",
 				"dependsOn": [
 					{
@@ -50,7 +50,7 @@
 					},
 					"activities": [
 						{
-							"name": "blob_to_tables",
+							"name": "Copy data1",
 							"type": "Copy",
 							"dependsOn": [],
 							"policy": {
@@ -104,11 +104,11 @@
 							],
 							"outputs": [
 								{
-									"referenceName": "AzureSqlTables_list",
+									"referenceName": "output_tables",
 									"type": "DatasetReference",
 									"parameters": {
 										"tablename": {
-											"value": "@concat(replace(item().name,'.txt',''))",
+											"value": "@concat(replace(item().name,'.txt',dataUriToString(utcNow())))",
 											"type": "Expression"
 										}
 									}
