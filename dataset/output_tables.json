@@ -2,7 +2,7 @@
 	"name": "output_tables",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "Sqlserver",
+			"referenceName": "sqldb_linked",
 			"type": "LinkedServiceReference"
 		},
 		"parameters": {
