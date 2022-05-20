@@ -108,7 +108,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"tablename": {
-											"value": "@concat(replace(item().name,'.txt',dataUriToString(utcNow())))",
+											"value": "@concat(replace(item().name,'.txt',''))",
 											"type": "Expression"
 										}
 									}
