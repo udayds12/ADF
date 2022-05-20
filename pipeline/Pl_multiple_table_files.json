@@ -108,7 +108,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"tablename": {
-											"value": "@item().name",
+											"value": "@concat(replace(item().name,'.txt',''))",
 											"type": "Expression"
 										}
 									}
