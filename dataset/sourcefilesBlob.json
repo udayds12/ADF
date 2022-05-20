@@ -5,6 +5,9 @@
 			"referenceName": "Source_files",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "Task2"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
