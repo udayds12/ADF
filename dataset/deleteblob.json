@@ -1,0 +1,25 @@
+{
+	"name": "deleteblob",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage_containers",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"foldername": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": {
+					"value": "@dataset().foldername",
+					"type": "Expression"
+				}
+			}
+		}
+	}
+}
