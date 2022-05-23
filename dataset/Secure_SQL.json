@@ -1,0 +1,16 @@
+{
+	"name": "Secure_SQL",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "privateend_SQL",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Emp_fresh"
+		}
+	}
+}
