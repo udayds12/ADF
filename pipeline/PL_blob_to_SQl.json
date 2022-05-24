@@ -35,7 +35,13 @@
 				},
 				"inputs": [
 					{
-						"referenceName": "blobsource",
+						"referenceName": "blob_input_copy",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "sqltable",
 						"type": "DatasetReference"
 					}
 				]
