@@ -6,7 +6,7 @@
 		"pipelines": [
 			{
 				"pipelineReference": {
-					"referenceName": "PL_blob_to_SQl",
+					"referenceName": "PL_blob_to_SQl_Schedule_trigger",
 					"type": "PipelineReference"
 				}
 			}

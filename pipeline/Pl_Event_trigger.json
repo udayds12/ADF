@@ -1,9 +1,9 @@
 {
-	"name": "PL_blob_to_SQl_Schedule_trigger",
+	"name": "Pl_Event_trigger",
 	"properties": {
 		"activities": [
 			{
-				"name": "Blob_To_SQL",
+				"name": "Copy data1",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -26,27 +26,24 @@
 							"type": "DelimitedTextReadSettings"
 						}
 					},
-					"sink": {
-						"type": "AzureSqlSink",
-						"writeBehavior": "insert",
-						"sqlWriterUseTableLock": false
-					},
 					"enableStaging": false
 				},
 				"inputs": [
 					{
-						"referenceName": "blob_input_copy",
-						"type": "DatasetReference"
-					}
-				],
-				"outputs": [
-					{
-						"referenceName": "sqltable",
+						"referenceName": "input_containter",
 						"type": "DatasetReference"
 					}
 				]
 			}
 		],
+		"parameters": {
+			"filename": {
+				"type": "string"
+			},
+			"Cname": {
+				"type": "string"
+			}
+		},
 		"annotations": []
 	}
 }
