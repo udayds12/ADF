@@ -1,0 +1,6 @@
+{
+	"name": "Hourly_log_trigger_tumbling",
+	"properties": {
+		"annotations": []
+	}
+}
